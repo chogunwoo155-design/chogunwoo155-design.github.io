@@ -115,12 +115,12 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .profile-card { padding: 26px 24px 22px; }
 .profile-top { display: flex; justify-content: space-between; align-items: flex-start; }
 .profile-top { position: relative; }
-.profile-top .theme-toggle { position: absolute; top: 10px; right: 10px; background: rgba(255,255,255,.85); }
 .avatar {
-  width: 100%; height: auto; aspect-ratio: 4 / 5; border-radius: 18px;
-  object-fit: cover; object-position: 50% 20%; display: block;
-  background: var(--surface-2);
-  box-shadow: 0 6px 18px rgba(52,81,209,.22);
+  width: 72px; height: 72px; border-radius: 22px;
+  display: grid; place-items: center;
+  background: linear-gradient(140deg, #3451d1, #5b74f0 60%, #7d93ff);
+  color: #fff; font-weight: 700; font-size: 22px; letter-spacing: -0.03em;
+  box-shadow: 0 6px 18px rgba(52,81,209,.28);
 }
 .theme-toggle {
   width: 38px; height: 38px; border-radius: 12px;
