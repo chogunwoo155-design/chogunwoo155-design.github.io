@@ -114,9 +114,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 /* ===== Profile ===== */
 .profile-card { padding: 26px 24px 22px; }
 .profile-top { display: flex; justify-content: space-between; align-items: flex-start; }
+.profile-top { position: relative; }
+.profile-top .theme-toggle { position: absolute; top: 10px; right: 10px; background: rgba(255,255,255,.85); }
 .avatar {
-  width: 88px; height: 88px; border-radius: 24px;
-  object-fit: cover; display: block;
+  width: 100%; height: auto; aspect-ratio: 4 / 5; border-radius: 18px;
+  object-fit: cover; object-position: 50% 20%; display: block;
   background: var(--surface-2);
   box-shadow: 0 6px 18px rgba(52,81,209,.22);
 }
@@ -208,7 +210,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .feature-body .eyebrow { margin-bottom: -8px; }
 .lede { color: var(--text-2); font-size: 16px; }
 
-.kpis { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 2px 0 0; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); gap: 8px; margin: 2px 0 0; }
 .kpis > div { background: var(--accent-soft); border-radius: var(--radius-sm); padding: 12px 14px; }
 .kpis dt { font-size: 12.5px; color: var(--text-2); }
 .kpis dd { margin: 2px 0 0; font-size: 20px; font-weight: 800; color: var(--accent); letter-spacing: -0.02em; }
